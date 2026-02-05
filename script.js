@@ -120,7 +120,7 @@ function initSmoothScroll() {
 function initScrollReveal() {
     // Add reveal class to elements we want to animate
     const revealElements = document.querySelectorAll(
-        '.service-card, .about-feature, .why-card, .area-item, .testimonial-card, .contact-method'
+        '.service-card, .about-feature, .why-card, .area-item, .testimonial-card, .contact-method, .blog-card, .sidebar-widget, .author-bio'
     );
 
     revealElements.forEach(el => {
@@ -150,7 +150,7 @@ function initScrollReveal() {
     });
 
     // Stagger animation for grid items
-    const staggerContainers = document.querySelectorAll('.services-grid, .why-grid, .areas-list, .testimonials-grid');
+    const staggerContainers = document.querySelectorAll('.services-grid, .why-grid, .areas-list, .testimonials-grid, .blog-grid, .blog-listing-grid, .blog-related-grid');
 
     staggerContainers.forEach(container => {
         const items = container.querySelectorAll('.reveal');
